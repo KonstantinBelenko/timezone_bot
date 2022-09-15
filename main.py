@@ -2,9 +2,14 @@ from datetime import datetime
 from telebot import types
 import telebot
 import pytz
+import os
 
 # You're supposed to put your TelegramBot token here
-bot = telebot.TeleBot("")
+#
+# os.environ allows you to access the TelegramBot token
+# from the environment variable.
+
+bot = telebot.TeleBot(os.environ("TELEBOT_TOKEN", "Token here"))
 
 standard_reply = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
 standard_reply.add(types.KeyboardButton("🌍 Узнать текущее время"))
