@@ -9,7 +9,7 @@ import os
 # os.environ allows you to access the TelegramBot token
 # from the environment variable.
 
-bot = telebot.TeleBot(os.environ("TELEBOT_TOKEN", "Token here"))
+bot = telebot.TeleBot(os.environ.get("TELEBOT_TOKEN", "Token here"))
 
 standard_reply = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
 standard_reply.add(types.KeyboardButton("🌍 Узнать текущее время"))
