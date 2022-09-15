@@ -1,4 +1,4 @@
-# ⏱ timezone_bot
+# ⏱ Timezone friends bot
 A bot for people with a lot of friends in different timezones. It should allow only people that you add into your whitelist to use it. 
 I should be private and hosted on your own. All instructions are provided down below.
 
